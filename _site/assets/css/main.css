@@ -1,0 +1,26 @@
+:root {
+  --text-color: #e3e4e8;
+  --link-color: #fac3b7;
+  --background-color-1: #2b171c;
+  --background-color-2: #321b23;
+  --background-color-3: #381e22;
+
+  color-scheme: dark;
+  font-family: "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-2);
+}
