@@ -1,3 +1,15 @@
 ---
 layout: default
 ---
+<div class="gallery_grid">
+  {% for file in site.static_files %}
+    {% if file.extname == ".webp" -%}
+      <div class="gallery_item">
+        <div>
+          <img src="{{ file.path }}" loading="lazy">
+          <p><a href="{{ file.path | replace: '.webp', '.gif' }}" target="_blank">gif</a> | <a href="{{ file.path }}" target="_blank">webp</a></p>
+        </div>
+      </div>
+    {%- endif %}
+  {% endfor %}
+</div>

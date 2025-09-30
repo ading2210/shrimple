@@ -4,9 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    <meta name="description" content="A collection of GIFs contain fish and seafood puns.">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="https://shrimply.tech/">
+    <meta property="og:description" content="A collection of GIFs contain fish and seafood puns.">
+    <meta property="og:image" content="https://shrimply.tech/assets/img/icon.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#f58870">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/png" href="/assets/img/icon.png">
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="/" id="site_name">
+          <img src="/assets/img/icon.svg" width="48px" height="48px" alt="website logo">
+          <h1 style="font-size: 24px">{{ site.title }}</h1>
+        </a>
+        <div class="flex_spacer"></div>
+      </nav>
+    </header>
     {{ content }}
   </body>
 </html>

@@ -24,3 +24,57 @@ body {
   flex-direction: column;
   background-color: var(--background-color-2);
 }
+
+header, nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background-color-3);
+}
+nav {
+  padding: 4px;
+  flex-wrap: wrap;
+}
+nav a {
+  text-decoration: none;
+}
+
+.flex_spacer { 
+  flex-grow: 1;
+}
+
+#site_name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#site_name h1 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+.gallery_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+.gallery_item {
+  width: 300px;
+  min-height: 100px;
+}
+.gallery_item div {
+  padding: 8px;
+  background-color: var(--background-color-3);
+}
+.gallery_item img {
+  width: 100%;
+}
+.gallery_item a {
+  color: var(--link-color);
+}
+.gallery_item p {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
